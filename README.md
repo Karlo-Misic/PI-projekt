@@ -1,36 +1,20 @@
-# Inicijalne upute za prijavu projekta iz Programskog inženjerstva
+# Korisnički zahtjevi za Sustav upravljanja gradskim prijevozom putnika
 
-Poštovane kolegice i kolege, 
+## Podaci o studentu
 
-uspješno ste prijavili svoj projektni tim na kolegiju Programsko inženjerstvo, te je za vas automatski kreiran repozitorij koji ćete koristiti za verzioniranje vašega koda, ali i za pisanje dokumentacije.
+Ime i prezime | E-mail adresa (FOI) |    JMBAG   | Github korisničko ime
+------------  | ------------------- | ---------- | ---------------------
+Karlo Mišić   | kmisic22@foi.hr     | 0016158466 | kmisic22
 
-Ovaj dokument (README.md) predstavlja **osobnu iskaznicu vašeg projekta**. Vaš prvi zadatak je **prijaviti vlastiti projektni prijedlog** na način da ćete prijavu vašeg projekta, sukladno uputama danim u ovom tekstu, napisati upravo u ovaj dokument, umjesto ovoga teksta.
-
-Za upute o sintaksi koju možete koristiti u ovom dokumentu i kod pisanje vaše projektne dokumentacije pogledajte [ovaj link](https://guides.github.com/features/mastering-markdown/).
-Sav programski kod potrebno je verzionirati u glavnoj **master** grani i **obvezno** smjestiti u mapu Software. Sve artefakte (npr. slike) koje ćete koristiti u vašoj dokumentaciju obvezno verzionirati u posebnoj grani koja je već kreirana i koja se naziva **master-docs** i smjestiti u mapu Documentation.
-
-Nakon vaše prijave bit će vam dodijeljen mentor s kojim ćete tijekom semestra raditi na ovom projektu. A sada, vrijeme je da prijavite vaš projekt. Za prijavu vašeg projektnog prijedloga molimo vas koristite **predložak** koji je naveden u nastavku, a započnite tako da kliknete na *olovku* u desnom gornjem kutu ovoga dokumenta :) 
-
-# Naziv projekta
-(u redak iznad navedite kratki proizvoljni naziv projekta prikladan akademskoj zajednici, a ovaj tekst obrišite)
-
-## Projektni tim
-
-Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
-------------  | ------------------- | ----- | ---------------------
-Ime i prezime | mojaadresa@foi.hr | 000000000 | githubuser
-Ime i prezime | ... | ... | ...
 
 ## Opis domene
-Umjesto ovih uputa opišite domenu ili problem koji pokrivate vašim  projektom. Domena može biti proizvoljna, ali obratite pozornost da sukladno ishodima učenja, domena omogući primjenu zahtijevanih koncepata kako je to navedeno u sljedećem poglavlju. Priložite odgovarajuće skice gdje je to prikladno.
+Jedan od glavnih prijevoznih sredstva je autobus, gradski autobusi Varaždin svakodnevno i redovito prevoze velik broj putnika gradskim i prigradskim relacijama. Kvaliteta usluge prijevoza je veoma bitna i treba se održavati na visokoj razini. Da bi unaprijedili poslovne procese poduzeće se odlučilo na digitaliziranje poslovanja koje se trenutno vodi preko papira. Digitaliziranje uključuje unapređenje za zaposlenike i korisnike. Zaposlenici bi digitalno brže i lakše mogli definirati autobusne stanice, vozne linije, vozni red i vozni park poduzeća. Dok bi korisnici imali benefite kupovine karte na kiosku pored autobusne stanice, dobivanje informacija o autobusu i posljednjoj stanici na kojoj je bio te lakše ukrcavanje bez dugotrajnog čekanja pomoću čitača karte postavljenom na ulazu u autobus. Sastanci su jedan od glavnih pokretača za unapređenje i rješavanje problema stoga im je potreban ispis voznih linja, voznog reda, informacije o voznom parku, stanicama. S obzirom na to da je Varaždin mali grad putnik treba odlučiti hoće li koristit gradski prijevoz ili doći do odredišta pješice. Takva odluka bi bila lakša da postoji strukturirano izvješće o autobusnim linijama i polascima. Velik broj korisnika su starije osobe koje više nisu u stanju upravljati osobnim automobilom s toga se oslanjaju na gradski prijevoz, tim korisnicima bi bilo izuzetno korisno takvo izvješće na autobusnim stanicama i kolodvoru.
 
 ## Specifikacija projekta
-Umjesto ovih uputa opišite zahtjeve za funkcionalnošću programskog proizvoda. Pobrojite osnovne funkcionalnosti i za svaku naznačite ime odgovornog člana tima. Opišite buduću arhitekturu programskog proizvoda. Obratite pozornost da bi arhitektura trebala biti višeslojna s odvojenom (dislociranom) bazom podatka. Također uzmite u obzir da bi svaki član tima treba biti odgovorana za otprilike 3 funkcionalnosti, te da bi opterećenje članova tima trebalo biti ujednačeno. Priložite odgovarajuće dijagrame i skice gdje je to prikladno. Funkcionalnosti sustava bobrojite u tablici ispod koristeći predložak koji slijedi:
+Cilj ovog projekta je osmisliti softversko rješenje koje će digitalizirati autobusno poduzeće Varaždin. U svrhu olakšanja i bržeg rješavanja svakodnevnih poslova zaposlenika. Zaposlenicima bi bilo  omogućeno digitalizirano definiranje voznog parka poduzeća, voznih linija, voznog reda, praćenje lokacije autobusa, ispis strukturiranog izvještaja za poslovne sastanke. Dok bi krajnji korisnici u ovom slučaju putnici imali mogućnost kupovine karte na kiosku postavljenom na autobusnoj stanici, lakše ukrcavanje uz pomoć čitača karte postavljenom na ulazu u autobus, pristup informacijama s pomoću izvještaja na svakoj autobusnoj stanici ili na šalteru autobusnog kolodvora.
 
-Oznaka | Naziv | Kratki opis | Odgovorni član tima
------- | ----- | ----------- | -------------------
-F01 | Login | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
-F02 | Pregled dnevnika | .... | ...
+## Zadatak
+[Link zadataka](https://github.com/foivz/pi2024-zadace-Karlo-Misic/blob/Karlo-Misic-patch-1/Zadatak%20-%20Gradski%20prijevoz.pdf)
 
-## Tehnologije i oprema
-Umjesto ovih uputa jasno popišite sve tehnologije, alate i opremu koju ćete koristiti pri implementaciji vašeg rješenja. Ne zaboravite planirati korištenje tehnologija u aktivnostima kao što su projektni menadžment ili priprema dokumentacije. Tehnologije koje ćete koristiti bi trebale biti javno dostupne, a ako ih ne budemo obrađivali na vježbama u vašoj dokumentaciji ćete morati navesti način preuzimanja, instaliranja i korištenja onih tehnologija koje su neopbodne kako bi se vaš programski proizvod preveo i pokrenuo. Pazite da svi alati koje ćete koristiti moraju imati odgovarajuću licencu.
+## Resursi
+Svi resursi nalaze se u mapi _Documentation_.
