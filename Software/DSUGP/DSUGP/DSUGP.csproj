@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24F94D64-3C56-416D-AB4E-B6138B4B601F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DSUGP</RootNamespace>
+    <AssemblyName>DSUGP</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DBLayer">
+      <HintPath>DLLs\DBLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAutobusnaStanica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutobusnaStanica.Designer.cs">
+      <DependentUpon>FrmAutobusnaStanica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDodajVozniRed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDodajVozniRed.Designer.cs">
+      <DependentUpon>FrmDodajVozniRed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDodajZaposlenika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDodajZaposlenika.Designer.cs">
+      <DependentUpon>FrmDodajZaposlenika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmlogin.Designer.cs">
+      <DependentUpon>Frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNovaLinija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNovaLinija.Designer.cs">
+      <DependentUpon>FrmNovaLinija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNovaStanica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNovaStanica.Designer.cs">
+      <DependentUpon>FrmNovaStanica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNovoVozilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNovoVozilo.Designer.cs">
+      <DependentUpon>FrmNovoVozilo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPocetna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPocetna.Designer.cs">
+      <DependentUpon>FrmPocetna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVoznaLinija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVoznaLinija.Designer.cs">
+      <DependentUpon>FrmVoznaLinija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVozniPark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVozniPark.Designer.cs">
+      <DependentUpon>FrmVozniPark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVozniRed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVozniRed.Designer.cs">
+      <DependentUpon>FrmVozniRed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IspisAutobusneStanice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IspisAutobusneStanice.Designer.cs">
+      <DependentUpon>IspisAutobusneStanice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IspisVozneLinije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IspisVozneLinije.Designer.cs">
+      <DependentUpon>IspisVozneLinije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IspisVoznogParka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IspisVoznogParka.Designer.cs">
+      <DependentUpon>IspisVoznogParka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IspisVoznogReda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IspisVoznogReda.Designer.cs">
+      <DependentUpon>IspisVoznogReda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AutobusnaStanica.cs" />
+    <Compile Include="Models\Osoba.cs" />
+    <Compile Include="Models\VoznaLinija.cs" />
+    <Compile Include="Models\vozniPark.cs" />
+    <Compile Include="Models\vozniRed.cs" />
+    <Compile Include="Models\Zaposlenik.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repozitoriji\AutobusneStanice.cs" />
+    <Compile Include="Repozitoriji\VozneLinije.cs" />
+    <Compile Include="Repozitoriji\VozniPark.cs" />
+    <Compile Include="Repozitoriji\VozniRed.cs" />
+    <Compile Include="Repozitoriji\Zaposlenici.cs" />
+    <EmbeddedResource Include="FrmAutobusnaStanica.resx">
+      <DependentUpon>FrmAutobusnaStanica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDodajVozniRed.resx">
+      <DependentUpon>FrmDodajVozniRed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDodajZaposlenika.resx">
+      <DependentUpon>FrmDodajZaposlenika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmlogin.resx">
+      <DependentUpon>Frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNovaLinija.resx">
+      <DependentUpon>FrmNovaLinija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNovaStanica.resx">
+      <DependentUpon>FrmNovaStanica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNovoVozilo.resx">
+      <DependentUpon>FrmNovoVozilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPocetna.resx">
+      <DependentUpon>FrmPocetna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVoznaLinija.resx">
+      <DependentUpon>FrmVoznaLinija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVozniPark.resx">
+      <DependentUpon>FrmVozniPark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVozniRed.resx">
+      <DependentUpon>FrmVozniRed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IspisAutobusneStanice.resx">
+      <DependentUpon>IspisAutobusneStanice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IspisVozneLinije.resx">
+      <DependentUpon>IspisVozneLinije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IspisVoznogParka.resx">
+      <DependentUpon>IspisVoznogParka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IspisVoznogReda.resx">
+      <DependentUpon>IspisVoznogReda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DLLs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
